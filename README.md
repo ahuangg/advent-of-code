@@ -1,5 +1,9 @@
 ## Advent of Code IDE
 
+This script automates the daily setup process for Advent of Code challenges by creating
+a new directory structure and fetching necessary problem data. It creates a template
+for solving the day's puzzle with basic input parsing and solution structure.
+
 ### Prerequisites
 
 1. Python 3.x.x
@@ -9,7 +13,7 @@
 1. Install required packages
 
     ```bash
-    	pip install -r requirements.txt
+    pip install -r requirements.txt
     ```
 
 2. Get your Advent of Code session ID
@@ -23,7 +27,7 @@
 3. Create environment file and add session ID
 
     ```bash
-    	SESSION_ID="PASTE_HERE"
+    SESSION_ID="PASTE_HERE"
     ```
 
 ### Usage
@@ -31,7 +35,7 @@
 1. Start the tool
 
     ```bash
-    	python3 main.py
+    python3 main.py
     ```
 
 2. The tool will

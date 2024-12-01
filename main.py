@@ -6,7 +6,7 @@ a new directory structure and fetching necessary problem data. It creates a temp
 for solving the day's puzzle with basic input parsing and solution structure.
 
 Usage:
-    python setup.py [year] [day]
+    python3 main.py
     
 Note:
     Input parsing is template-based and may need modification depending on the specific
