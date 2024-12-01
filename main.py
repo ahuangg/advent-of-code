@@ -77,7 +77,6 @@ class Client:
                self.submit_solution(1 if not self.solved[1] else 2)
                
            time.sleep(1)
-           print(self.solved)
            
        if self.solved[1] and self.solved[2]:
            print(f"Completed {self.year} day {self.day}")
