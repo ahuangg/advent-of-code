@@ -25,9 +25,6 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 from dotenv import load_dotenv
 
-
-# go to the site retrieve problem statement and generate template
-# work on automated submission 
 class Client:
     def __init__(self, session_id):
         self.session = requests.Session()
