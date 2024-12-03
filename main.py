@@ -85,10 +85,12 @@ class Client:
         self.notebook = {
 				"cells": [{ "cell_type": "code", "metadata": {}, "source":[
         			"def parse_input(file_path):\n",
+					"    list = []\n",
 					"    with open(file_path, 'r') as file:\n",
 					"        for line in file:\n",
+					"            list.append(line)\n",
 					"            pass\n",
-					"    return"
+					"    return list"
           		] }],
 				"metadata": {
 					"kernelspec": {
@@ -109,11 +111,11 @@ class Client:
     def update_template(self, input, content):
         markdown_cell = { "cell_type": "markdown", "metadata": {}, "source": content }
         code_cell = { "cell_type": "code", "metadata": {}, "source": [
-			"def solution():\n",
+			"def solution(input):\n",
             "    pass\n",
             "\n",
             f"input = parse_input('{input}.txt')\n",
-            "solution()"
+            "solution(input)"
 		] }
         submission_cell = { "cell_type": "code", "metadata": {}, "source": [
 			"# Submission\n",
